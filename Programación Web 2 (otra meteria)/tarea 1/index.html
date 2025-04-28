@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <form action="*" method="get" style="max-width: 500px; border: solid black 1px; padding: 10px;">
+      <fieldset>
+        <legend>Información Personal</legend>
+          <label for="name" style="display: inline-block ; margin-bottom: 20px;">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Carlo..." maxlength="22" autofocus>
+          <br>
+          <label for="lastName" style="display: inline-block ; margin-bottom: 20px;">Apellido</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Gonz..." maxlength="22">
+          <br>
+          <label for="tel" style="display: inline-block ; margin-bottom: 20px;">Teléfono</label>
+          <input type="number" name="tel" id="tel" maxlength="12" placeholder="122...">
+          <br>
+          <label for="email" aria-placeholder="carlosgonzales@gmail..." style="display: inline-block ; margin-bottom: 20px;">Email</label>
+          <input type="email" name="email" id="email">
+          <br>
+          <label for="gen">Genéro</label>
+          <select name="gen" id="gen" style="display: inline-block ; margin-bottom: 20px;">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Intersex">Intersex</option>
+            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+            <option value="Otro">Otro</option>
+          </select>
+          <br>
+          <label for="country">País</label>
+          <select name="country" id="country" style="display: inline-block ; margin-bottom: 20px;">
+            <option value="Argentina">Argentina</option>
+            <option value="Francia">Francia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Uruguay">Uruguay</option>
+          </select>
+          <label for="checkbox">Tengo un cupón</label>
+          <input type="checkbox" name="checkbox" id="checkbox" style="display: inline-block ; margin-bottom: 20px;">
+      </fieldset>
+      <fieldset>
+        <legend>Mensaje</legend>
+        <textarea name="text" id="text" cols="60" rows="4">
+          Escriba su mensaje aqui...
+        </textarea>
+      </fieldset>
+      <fieldset>
+        <a href="#">Términos y Condiciones</a>
+        <br>
+        <label for="IDo">Acepto</label>
+        <input type="radio" id="IDo" name="terms">
+        <br>
+        <label for="IDoNot">No acepto</label>
+        <input type="radio" id="IDoNot" name="terms" checked>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>

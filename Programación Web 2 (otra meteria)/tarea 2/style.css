@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.card {
+  width: 230px;
+  border: solid black 2px;
+  margin: auto;
+}
+
+.card__header h2{
+  color: #fff;
+  background-color: #666;
+  padding: 4px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card__main {
+  font-style: italic;
+  padding: 8px;
+  text-align: justify;
+}
+
+.card__footer {
+  background-color: #999;
+  text-align: center;
+  padding: 8px;
+}
