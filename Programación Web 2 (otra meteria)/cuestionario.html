@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="" method="post">
+    <fieldset>
+      <legend>Datos Personales</legend>
+
+      <label for="nombre">Nombre/s y Apellido/s:
+        <input type="text" name="nombre" id="nombre" maxlength="40">
+      </label>
+      <br>
+      <br>
+      <label for="email" placeholder=" Este campo valida que lo ingresado sea un email" maxlength="40">Correo eléctronico:
+        <input type="email" name="email" id="email" >
+      </label>
+      <br>
+      <br>
+      <label for="edad" maxlength="40">Edad:
+        <input type="number" name="edad" id="edad" disabled>
+      </label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Seleccione su color de preferencia:</legend>
+
+      <label>Rojo
+              <input type="radio" name="color" value="Rojo">
+      </label>
+      <label for="">Verde
+        <input type="radio" name="color" value="Verde" checked>
+      </label>
+      <label for="">Azul
+        <input type="radio" name="color" value="Azul">
+      </label>
+    </fieldset>
+    <br>
+    <button type="submit">Click para enviar</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+       /* primera línea del primer párrafo del contenedor1*/
+
+       #contenedor1:first-child::first-line
+ {
+
+           color: #CC3300;
+
+           font-weight: bold;
+           margin-top: ;
+
+       }
