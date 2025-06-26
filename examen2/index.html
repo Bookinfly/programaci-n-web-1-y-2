@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    .rojo{
+      background-color: red;
+    }
+
+    .verde{
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor facere nam perferendis est, dolorem exercitationem esse! Ipsum alias culpa veniam eius, dolores facilis provident laudantium. Obcaecati odit quo impedit!</p>
+  <button id="rojo">Fondo Rojo</button>
+  <button id="verde">Fondo Verde</button>
+  <script type="text/javascript" defer> 
+    alert("Un mensaje de prueba");
+    const VERDE = document.getElementById("verde")
+    const ROJO = document.getElementById("rojo")
+    const TEXT = document.querySelector(".texto")
+    
+    const CAMBIAR_COLOR = (color)=>{
+      TEXT.className = "texto " + color
+    }
+
+    VERDE.addEventListener("click", ()=>{CAMBIAR_COLOR("verde")})
+    ROJO.addEventListener("click", ()=>{CAMBIAR_COLOR("rojo")})
+
+  </script>
+</body>
+</html>
