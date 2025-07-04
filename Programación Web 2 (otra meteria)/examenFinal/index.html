@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+ 
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+   <title>Ejercicio</title>
+
+   <style type="text/css">
+
+       /* Todos los div de la página */
+div{
+  border: solid black;
+}
+
+
+/* borde inferior del contenedor 3 de color azul*/
+
+#contenedor3 {
+
+border-color: blue;
+
+}
+
+
+/* primera línea del primer párrafo del contenedor1*/
+
+#contenedor1 p:first-of-type::first-line{
+
+color: #CC3300;
+font-weight: bold;
+}
+div.especial{
+background-color: coral;
+margin-top: 10px;
+}
+</style>
+
+</head>
+
+ 
+
+<body>
+
+   <div id="contenedor1">
+
+       <p class="primero">Ésta es la primera línea del primer párrafo. <br/>
+
+           Segunda línea.
+
+       </p>
+
+       <p>Segundo párrafo</p>
+
+   </div>
+
+ 
+
+   <div id="contenedor2" class="especial">
+
+       <p class="primero">1° párrafo del 2° contenedor</p>
+
+ 
+
+       <p>Otro párrafo.</p>
+
+ 
+
+       <p class="especial">Un párrafo especial.</p>
+
+   </div>
+
+ 
+
+   <div id="contenedor3"class="especial">
+
+       <p class="primero">Aquí se presenta el 1° párrafo del 3° contenedor.
+
+       </p>
+
+ 
+
+   </div>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="ul">
+    <li>elemento de lista</li>
+    <li>elemento de lista</li>
+  </ul>
+  <button type="button" id="añadir">Añadir elemento</button>
+  <button type="button" id="eliminar">Eliminar elemento</button>
+
+  <script>
+    const AÑADIR = document.getElementById("añadir")
+    const ELIMINAR = document.getElementById("eliminar")
+    const UL = document.getElementById("ul")
+    AÑADIR.addEventListener('click', ()=>AÑADIR_ELEMENTO())
+    ELIMINAR.addEventListener('click', ()=>ELIMINAR_ELEMENTO())
+
+    const AÑADIR_ELEMENTO = ()=>{
+      let elemento = document.createElement("li")
+      elemento.textContent = "Elemento Añadido"
+      UL.append(elemento)
+    }
+
+    const ELIMINAR_ELEMENTO = () => {
+      if (UL.firstElementChild) {
+        UL.removeChild(UL.firstElementChild);
+      }
+    }
+  </script>
+
+  </body>
+</html>
